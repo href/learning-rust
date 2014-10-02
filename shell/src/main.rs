@@ -50,3 +50,21 @@ fn main() {
         }
     }
 }
+
+#[cfg(test)]
+mod test {
+    #![feature(globs)]
+    use super::utils;
+    use super::Random;
+    use super::parse_input;
+
+    #[test]
+    fn test_random_number() {
+        assert!(utils::random_number(2u) <= 2u);
+    }
+
+    #[test]
+    fn test_parse_input() {
+        assert!(parse_input("random") == Random);
+    }
+}
