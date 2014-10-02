@@ -1,0 +1,9 @@
+[package]
+
+name = "shell"
+version = "0.0.1"
+authors = [ "Denis Krienbühl <denis@href.ch>" ]
+
+[[bin]]
+
+name = "shell"
